@@ -1,6 +1,8 @@
 @extends ('front.layout.layout_default')
+@section('title')
+Mes Notifications
+@endsection
 @section('style')
-@include('front.dashboard.style')
 <style type="text/css">
 .table {
     border-top: 1px solid #d6d6d6;
@@ -28,9 +30,6 @@ table tbody tr td{
 }
 </style>
 @endsection
-@section('title')
-Tableau de bord
-@endsection
 @section('content')
 <div class="page-content custom-img-background dark page-title page-title-1 mb-70">
     <div class="container">
@@ -39,7 +38,7 @@ Tableau de bord
             <!-- .col-md-6 start -->
             <div class="col-md-6">
                 <div class="custom-heading style-1 triggerAnimation animated fadeInUp" data-animate="fadeInUp" style="opacity: 1;">
-                    <h1>Notifi<span>cations</span></h1>
+                    <h1>Mes <span>Notifications</span></h1>
                 </div><!-- .custom-heading.style-1 end -->
             </div><!-- .col-md-6 end -->
         </div><!-- .row end -->
@@ -50,101 +49,68 @@ Tableau de bord
         <div class="container clearfix">
             <ul class="breadcumb">
                 <li><a href="./">Accueil</a></li>
-                <li><span>Notifications</span></li>
+                <li><span>Mes Notifications</span></li>
             </ul>
         </div>
     </section>
-    <section class="breadcumb-wrapper">
-        <main id="tg-main" class="tg-main tg-haslayout">
-            <div class="container">
-                <div class="row">
-                    <div id="tg-twocolumns" class="tg-twocolumns tg-haslayout">
-                        <!-- Aside !--> 
-                         @include('front.aside.aside')       
-                        <div class="col-lg-8 col-md-9 col-sm-8 col-xs-12 pull-right">
-                            <div class="tg-dashboard">
-                                <div class="tg-border-heading">
-                                    <h3>Bonjour/Bonsoir <a href="#" >{{ Auth::user()->nom }}</a>, bienvenue dans votre espace de Notifications</h3>
-                                </div>
-                                <div class="tg-radarsupport tg-sectionborder">
-                                    <div class="row" style="margin-bottom: 30px;padding:0 15px;">
-                                        <div class="tg-border-heading">
-                                            <h3>Mes Notifications</h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <a href="/membre/mes-annonces">
-                                                        <i class="fa fa-bullhorn"></i> 
-                                                        J'ai <span class="red">0</span> commandes en cours
-                                                    </a>                                        
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <a href="/membre/mes-annonces">
-                                                        <i class="fa fa-bullhorn"></i> 
-                                                        J'ai <span class="red">0</span> livraison en effectuée
-                                                    </a>                                        
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <a href="/membre/mes-annonces">
-                                                        <i class="fa fa-bell"></i> 
-                                                        J'ai <span class="red">0</span> notification
-                                                    </a>                                        
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <a href="/membre/tirelire">
-                                                        <i class="fa fa-money"></i> 
-                                                        J'ai <span class="red">0</span> proposition de trajet
-                                                    </a>                                        
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <a href="/membre/messages">
-                                                        <i class="fa fa-envelope"></i> J'ai 
-                                                        <span class="red">0</span> message en attente
-                                                    </a>                                        
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <i class="fa fa-plane"></i> J'ai 
-                                                    <span class="red">0</span> transaction en cours                                     
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <a href="/membre/mon-profil#avis">
-                                                        <i class="fa fa-comments"></i> J'ai 
-                                                        <span class="red">0</span> avis reçus et 
-                                                        <span class="red">0</span> avis postés
-                                                    </a>                                        
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <div class="db-container">
-                                                    <a href="/membre/avis#avis-a-poster">
-                                                        <i class="fa fa-comments"></i> J'ai 
-                                                        <span class="red">0</span> avis à poster
-                                                    </a>                                        
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                       
-                        </div>            
-                    </div>
-                </div>       
+    <section class="ls section_padding_50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    @include('front.pages.alerte')
+                </div>
             </div>
-        </main> 
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="offers_user" class="table">
+                        <thead>
+                            <th> N° </th>
+                            <th> Libellé </th>
+                            <th> Description </th>
+                            <th> Date de création </th>
+                            <th> Statut </th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td> 
+                                    Demande de service accepter avce succes 
+                                    
+                                    
+                                </td>
+                                <td>
+                                Service demandé dans l'immobilier
+                                </td>
+                                <td>
+                                    2020-03-12 <br> 13:25:49
+                                </td>
+                                <td>
+                                    Valider
+                                </td>
+                                <td>
+                                    {!! Form::open() !!}
+                                        {!! Form::hidden('statut',0) !!}
+                                        {!! Form::hidden('id',1) !!}
+                                        <button type="submit" title="Désactiver" class="btn btn-xs btn-danger" style="padding: 5px">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </button>
+                                    {!! Form::close() !!}
+                                </td>
+                                <td>
+                                    <a href="{{ route('front-notifications.show',1) }}" title="Détail de la commande" class="btn btn-xs btn-info" style="padding: 5px">
+                                        <span class="glyphicon glyphicon-eye-open" style="margin-left: 8px;"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
-
 @endsection

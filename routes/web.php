@@ -37,6 +37,11 @@ Route::namespace('Front')->group(function(){
       Route::get('front-restauration/restauration/{detail}/detail', 'RestaurationController@show')->name('front-restauration.show');
       Route::resource('front-restauration','RestaurationController',['except'=>['show','edit','update','destroy']]);
    });
+
+   Route::namespace('Ecommerce')->group(function(){
+      Route::get('front-ecommerce/ecommerce/{detail}/detail', 'EcommerceController@show')->name('front-ecommerce.show');
+      Route::resource('front-ecommerce','EcommerceController',['except'=>['show','edit','update','destroy']]);
+   });
    Route::namespace('Apropos')->group(function(){
       Route::resource('front-apropos/apropos','AproposController',['except'=>['show','edit','update','destroy']]);
    });

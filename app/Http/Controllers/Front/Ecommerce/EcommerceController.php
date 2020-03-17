@@ -16,4 +16,9 @@ class EcommerceController extends Controller
     {
         return view('front.ecommerce.index');
     }
+
+    public function show($id)
+    {
+        return view('front.ecommerce.show');
+    }
 }
