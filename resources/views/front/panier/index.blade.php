@@ -145,25 +145,24 @@ Mon panier
         <div class="col-md-12">
             <div class="col-xs-4">
             </div>
-            <div class="col-xs-8 invoice-block">
+            <div class="col-md-12">
                 <ul class="list-unstyled amounts" style="font-size: 18px;">
                     <li style="text-align: right;margin-right: 205px;">
-                        <strong>Total : </strong> 
+                        <strong>Total Produit : </strong> 
+                        <span class="prixtt">2</span>                                              
+                    </li>
+                    <li style="text-align: right;margin-right: 205px;">
+                        <strong>Total Montant : </strong> 
                         <span class="prixtt">3.375</span>                                              
                     </li> 
                 </ul>
             </div>
         </div>
-        <div class="row" style="padding:8px;margin-left:px;margin-right:190px;">
-            <div style="float:right;">
+        <div class="col-md-offset-5">
             <a data-toggle="modal" data-target="#myModal4">
                 <button class="btn btn-success">Commander</button>
             </a>
-            </div>
-            <div style="float:right; margin-right: 10px;
-    margin-top: 2px;">
                 <button class="btn btn-primary">Retour</button>
-            </div>
         </div>
     </center>
     </section>
