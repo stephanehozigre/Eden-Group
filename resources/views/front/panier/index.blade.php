@@ -161,7 +161,7 @@ Mon panier
         <div class="row" style="padding:8px;margin-left:px;margin-right:190px">
             <div style="float:right">
             <a data-toggle="modal" data-target="#myModal4">
-                <button class="btn btn-success">Commander</button>
+                <button class="btn btn-success">passer la commande</button>
             </a>
             </div>
             <div style="float:right; margin-right: 10px;
