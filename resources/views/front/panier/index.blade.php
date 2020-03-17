@@ -76,7 +76,7 @@ Mon panier
                              <th>
                                 Coût total
                             </th>
-                            <th>Action</th>
+                            <th>Supprimer</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -85,7 +85,7 @@ Mon panier
                                 1                                                      
                             </td>
                             <td>
-                                Eau de Javel-12° 2L                                                  
+                                sac                                                  
                             </td>
                             <td class="hidden-480">
                                 Entretien                                                       
@@ -114,7 +114,7 @@ Mon panier
                                 1 
                             </td>                                                 
                             <td>
-                                Riz Riziére Parfumé-4,5kg                                                
+                                telephone techno                                                
                             </td>
                             <td class="hidden-480">
                                 Alimentation                                                       
@@ -166,7 +166,7 @@ Mon panier
             </div>
             <div style="float:right; margin-right: 10px;
     margin-top: 2px">
-                <button class="btn btn-primary">Retour</button>
+                <button class="btn btn-primary">Annuler la commande</button>
             </div>
         </div>
     </center>
