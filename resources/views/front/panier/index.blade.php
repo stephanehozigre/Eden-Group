@@ -158,11 +158,16 @@ Mon panier
                 </ul>
             </div>
         </div>
-        <div class="col-md-offset-5">
+        <div class="row" style="padding:8px;margin-left:px;margin-right:190px">
+            <div style="float:right">
             <a data-toggle="modal" data-target="#myModal4">
                 <button class="btn btn-success">Commander</button>
             </a>
+            </div>
+            <div style="float:right; margin-right: 10px;
+    margin-top: 2px">
                 <button class="btn btn-primary">Retour</button>
+            </div>
         </div>
     </center>
     </section>
