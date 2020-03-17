@@ -51,7 +51,7 @@ Route::namespace('Front')->group(function(){
       Route::resource('front-quisommesnous/quisommesnous','QuisommesnousController',['except'=>['show','edit','update','destroy']]);
     });
 
-   Route::namespace('Notreequipe')->group(function(){
+   Route::namespace('NotreEquipe')->group(function(){
       Route::resource('front-notreequipe/notreequipe','NotreequipeController',['except'=>['show','edit','update','destroy']]);
     });
 
