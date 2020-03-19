@@ -47,7 +47,7 @@ Ecommerce
                         </div>
                         <div class="single-sidebar-widget">
                             <div class="single-service-contact">
-                                <h3>	Avez-vous bésion d'une assistance?</h3>
+                                <h3>    Avez-vous bésion d'une assistance?</h3>
                                 <p>Vous pouvez nous laisser un message en cliquant.</p><a href="#!/Nous-contacter">Par ici<i class="fa fa-angle-double-right"></i></a>
                             </div>
                         </div>
@@ -119,11 +119,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -155,11 +155,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -191,11 +191,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -227,11 +227,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -265,11 +265,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -301,11 +301,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -337,11 +337,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -373,11 +373,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -411,11 +411,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -447,11 +447,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -483,11 +483,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -519,11 +519,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -557,11 +557,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -593,11 +593,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -629,11 +629,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
@@ -665,11 +665,11 @@ Ecommerce
                                     <div class="col-md-3 product-men">
                                         <div class="men-pro-item simpleCart_shelfItem">
                                             <div class="men-thumb-item">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-front">
-                                                <img src="styles/img/articles/1.jpg" alt="" class="pro-image-back">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-front">
+                                                <img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt="" class="pro-image-back">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
-                                                        <a href="{{Route('detail.index')}}" class="link-product-add-cart">Voir détail</a>
+                                                        <a href="{{Route('front-ecommerce.show',1)}}" class="link-product-add-cart">Voir détail</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">Nouveau</span>  
