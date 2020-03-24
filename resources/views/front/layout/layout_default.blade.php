@@ -42,6 +42,7 @@
         <!-- Google Web fonts -->
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300italic,400,800,700,600' rel='stylesheet' type='text/css'>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         @yield('style')
         <style type="text/css">
             .color{
