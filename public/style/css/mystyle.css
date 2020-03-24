@@ -1,0 +1,35 @@
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+    color: #a94442 !important;
+}
+
+.widget_search label{
+    color: white;
+}
+
+.widget_search select{
+    background-color: white;
+}
+
+#search_modal .form-control {
+    background-color: white;
+    color: black;
+    height: 50px; !important;
+}
+
+body {
+    font-size: 13px;
+}
+
+.pac-container{
+    z-index: 1000000000 !important;
+}
+
+/*
+@font-face {
+    font-family: 'Bellerose';
+    src:  url('../fonts/Bellerose.ttf') format('truetype');
+}
+body{
+    font-family: LondiniaMedium !important;
+}
+*/

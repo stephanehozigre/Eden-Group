@@ -8,10 +8,10 @@ Inscription
     <div class="page-content" style="margin-top:150px">
         @include('front.users.sidebar')
         <div class="col-md-7 pull-right tab-content">
-            <div class="container col-lg-offset-1" style="width: 650px;padding: 0px;">
+            <div class="container" style="width: 650px;padding: 0px;">
                 @include('front.pages.alerte')
             </div>
-            <div class="container col-lg-offset-1" style="width: 650px;border: 3px solid #0f263a;padding: 15px;">
+            <div class="container" style="width: 650px;border: 3px solid #0f263a;padding: 15px;">
            {!! Form::open(['route' =>'front-users.store']) !!}
             <div class="form-group {!! $errors->has('nom')?'has-error':'' !!}">
                 <label for="nom">Nom:</label>
