@@ -10,7 +10,12 @@
     <div class="page-content" style="margin-top:150px">
         @include('front.users.sidebar')
         <div class="col-md-7 pull-right tab-content">
-            <div class="container col-lg-offset-1" style="width: 650px;border: 3px solid #0f263a;padding: 15px;">
+            <div class="row" style="margin-bottom: 0px;">
+                <div class="col-sm-12">
+                    @include('front.pages.alerte')
+                </div>
+            </div>
+            <div class="container" style="width: 650px;border: 3px solid #0f263a;padding: 15px;">
                 {!! Form::open(['url' =>'front-users/login']) !!}
                     <div class="form-group {!! $errors->has('email')?'has-error':'' !!}">
                         <label for="email">Email:</label>

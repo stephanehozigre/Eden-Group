@@ -100,3 +100,18 @@ Route::namespace('Front')->group(function(){
     });
 
 });
+
+/* Admin */
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/',function (){
+        return redirect('/admin/login');
+    });
+    Route::namespace('Back')->group(function(){
+        Route::get('/home','HomeController@index');
+
+        Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
+        Route::post('/login', 'AdminAuth\LoginController@login');
+        Route::post('/logout', 'AdminAuth\LoginController@logout')->name('logout');
+    });
+});
