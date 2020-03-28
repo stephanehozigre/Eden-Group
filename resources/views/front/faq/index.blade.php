@@ -153,9 +153,14 @@ Foire au question
                   </div><!--/ Panel 3 end-->
 
                </div><!-- Accordion end -->
-
             </div><!-- Col end -->
-            
+            <div class="col-md-4" style="border:1px solid #eee;padding-bottom:8px;margin-top:2em;">
+      <!--Publicité-->
+      @include('front.baniere-droite.publicite')
+      <!--Youtube-->
+      @include('front.baniere-droite.youtube')
+      <!--Actualité-->
+      @include('front.baniere-droite.actualite')
          </div><!-- Content row end -->
 
       </div><!-- Container end -->
