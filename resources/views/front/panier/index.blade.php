@@ -138,13 +138,19 @@ Mon panier
                             </tr>
                         </tbody>
                     </table><br>
+                    <div class="checkout-right-basket">
+                        <a href="{{ Route('front-ecommerce.index') }}">Continuer mes achats
+                        </a>
+                    </div>
                     <div class="col-md-offset-10">
-                        <p style="font-size: 25px; font-weight: bold; color: #0f263a">Total : 5000F</p>
+                        <p style="font-size: 15px; font-weight: bold; color: #0f263a">Total Ht: 5000F</p>
+                        <p style="font-size: 15px; font-weight: bold; color: #0f263a">TVA: 5000F</p>
+                        <p style="font-size: 15px; font-weight: bold; color: #0f263a">Total TTC: 5000F</p>
                     </div>
                 </div>
                 <div class="col-md-offset-9">
                     <div class="checkout-right-basket">
-                        <a href="payment.html">Passer la commande
+                        <a href="payment.html">Valider mpn panier
                             <span class="fa fa-shopping-cart"></span>
                         </a>
                     </div>
