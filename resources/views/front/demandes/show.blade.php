@@ -2,10 +2,9 @@
 @section('title')
 Deatil
 @endsection
-
 @section('content')
 <div class="page-content custom-img-background dark page-title page-title-1 mb-70">
-  	<div class="container">
+    <div class="container">
         <!-- .row start -->
         <div class="row">
             <!-- .col-md-6 start -->
@@ -22,33 +21,71 @@ Deatil
         <div class="container clearfix">
             <ul class="breadcumb">
                 <li><a href="./">Accueil</a></li>
-                <li><span>Detail</span></li>
+                <li><span>Detail cde la demande</span></li>
             </ul>
         </div>
     </section>
     <section>
-    <div class="container" style="border: 2px solid silver;height:400px; width: 800px; border-color: orange">
-        <div class="col-md-12">
-            <p> </p>
-            <center><h1 style="font-family: Alegreya">Demande N°1</h1></center><br>
-        </div>
-        <div class="col-md-12">
-            <h1 style="font-family: Alegreya">Service Demandé</h1>
-            <p>Peinture</p>
-        </div>
-        <div class="col-md-12">
-            <h1 style="font-family: Alegreya">Description<br></h1> 
-            <p>Lorsque vous demandé ce service, nous mettons à votre disposition un personnel qualifié pour peintre votre maison sous toutes ses formes à fin de faire ressortir sa clarté</p>
-        </div>
-        <div class="col-md-12">
-            <h1 style="font-family: Alegreya">Date de demande</h1>
-            <p> 12 mars 2020</p>
-        </div>
-         <div class="col-md-12">
-            <h1 style="font-family: Alegreya">Statut</h1>
-            <p>En cours...</p>
-        </div>
-    </div>
-    </section><br>
+      <head>
+        <style>
+          .vertical-line{
+            border-left: 2px solid #000;
+            display: inline-block;
+            height: 130px;
+            margin: 0 20px;
+          }
+        </style>
+      </head>
+      <body>
+     <div class="container" style="border: 1px solid silver;height:1000px; width: 1000px; border-color: orange">
+         <center>
+       <h2>Info</h2><br/>
+       <strong>
+        Eden Group's Bat est un département de EDEN GROUP'S ENTREPRISE, notre mission est de servir une clientèle nombreuse dans la promotion immobilière; la réalisation et la réhabilitation des travaux de construction.
+       </strong>
+         </center>
+       <hr width="90%">
+       <h2>Coordonnée</h2><br/>
+       <strong>
+          TANOH PARFAIT NGORAN GEORGES<br/>
+         Abatta careffour bceao rue 45<br/>
+         78852243/42517780
+       </strong>
+       <hr width="90%">
+       <h2>Demandes dans votre commande</h2><br/>
+       <strong>
+           <font color="#FF0000">Peinture</font><br/>
+            Description<br/>
+           Lorsque vous demandé ce service, nous mettons à votre disposition un personnel qualifié pour peintre votre maison sous toutes ses formes à fin de faire ressortir sa clarté<br/>
+           Date de demande<br/>
+           12 mars 2020
+       </strong>
+       <hr width="90%">
+       <strong>
+          <strong>
+           <font color="#FF0000">Technologie</font><br/>
+            Description<br/>
+           Lorsque vous demandé ce service, nous mettons à votre disposition un personnel qualifié pour peintre votre maison sous toutes ses formes à fin de faire ressortir sa clarté<br/>
+           Date de demande<br/>
+           12 mars 2020
+       </strong>
+       </strong>
+       <hr width="90%">
+       <strong>
+           <font color="#FF0000">Electicité</font><br/>
+            Description<br/>
+           Lorsque vous demandé ce service, nous mettons à votre disposition un personnel qualifié pour peintre votre maison sous toutes ses formes à fin de faire ressortir sa clarté<br/>
+           Date de demande<br/>
+           12 mars 2020
+       </strong>
+       <hr width="90%">
+       <h2>Statut</h2><br/>
+       <strong>
+          La demande sera traitée entre Mardi 26 Nov et Mercredi 27 nov<br/>
+         <font color="vert">En cours de traitement...</font>
+       </strong>
+     </div>
+      </body>
+    </section>
 </div>
 @endsection

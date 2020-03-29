@@ -150,7 +150,7 @@ Mon panier
                 </div>
                 <div class="col-md-offset-9">
                     <div class="checkout-right-basket">
-                        <a href="payment.html">Valider mpn panier
+                        <a href="payment.html">Valider mon panier
                             <span class="fa fa-shopping-cart"></span>
                         </a>
                     </div>
