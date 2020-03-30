@@ -10,7 +10,7 @@ Deatil
             <!-- .col-md-6 start -->
             <div class="col-md-6">
                 <div class="custom-heading style-1 triggerAnimation animated fadeInUp" data-animate="fadeInUp" style="opacity: 1;">
-                    <h1><span>Detail Notifications</span></h1>
+                    <h1><span>Detail Notification</span></h1>
                 </div><!-- .custom-heading.style-1 end -->
             </div><!-- .col-md-6 end -->
         </div><!-- .row end -->
@@ -39,7 +39,7 @@ Deatil
       <body>
      <div class="container" style="border: 1px solid silver;height:1000px; width: 1000px; border-color: orange">
          <center>
-       <h2>EdenGroups</h2><br/>
+       <h2>EdenGroups Entreprise</h2><br/>
        <strong>
           3 services demandés<br/>
          <font color="#FF0000">*Immobilier<br/>

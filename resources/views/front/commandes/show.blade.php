@@ -21,7 +21,7 @@ Deatil
         <div class="container clearfix">
             <ul class="breadcumb">
                 <li><a href="./">Accueil</a></li>
-                <li><span>Detail de la commande</span></li>
+                <li><span>Detail de la Commande</span></li>
             </ul>
         </div>
     </section>
@@ -37,9 +37,9 @@ Deatil
         </style>
       </head>
       <body>
-     <div class="container" style="border: 1px solid silver;height:1000px; width: 1000px; border-color: orange">
+     <div class="container" style="border: 1px solid silver;height:1500px; width: 800px; border-color: orange">
          <center>
-       <h2>EdenGroups</h2><br/>
+       <h2>EdenGroups Entreprise</h2><br/>
        <strong>
           3 Articles<br/>
           Total:<span>300.00</span> FCFA<br/>
@@ -57,6 +57,7 @@ Deatil
        <hr width="90%">
        <h2>Articles dans votre commande</h2><br/>
        <strong>
+        <img src="{{ asset(config('pictures.path').'/styles/img/articles/A2.jpg') }}" alt="slidebg3"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"><br/>
           Qté:<span>1</span><br/>
            Infinix<br/>
            hot 8-6.6 HD-4G- 13Mpx<br/>
@@ -64,6 +65,7 @@ Deatil
        </strong>
        <hr width="90%">
        <strong>
+        <img src="{{ asset(config('pictures.path').'/styles/img/articles/A2.jpg') }}" alt="slidebg3"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"><br/>
           Qté:<span>1</span><br/>
            Infinix<br/>
            hot 8-6.6 HD-4G- 13Mpx<br/>
@@ -71,6 +73,7 @@ Deatil
        </strong>
        <hr width="90%">
        <strong>
+        <img src="{{ asset(config('pictures.path').'/styles/img/articles/A2.jpg') }}" alt="slidebg3"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"><br/>
           Qté:<span>1</span><br/>
            Infinix<br/>
            hot 8-6.6 HD-4G- 13Mpx<br/>

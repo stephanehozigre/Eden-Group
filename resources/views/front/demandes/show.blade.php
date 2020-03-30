@@ -21,7 +21,7 @@ Deatil
         <div class="container clearfix">
             <ul class="breadcumb">
                 <li><a href="./">Accueil</a></li>
-                <li><span>Detail cde la demande</span></li>
+                <li><span>Detail de la Demande</span></li>
             </ul>
         </div>
     </section>
