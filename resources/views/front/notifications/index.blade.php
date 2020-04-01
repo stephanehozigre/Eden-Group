@@ -65,7 +65,7 @@ table tbody tr td{
                     <table id="offers_user" class="table">
                         <thead>
                             <th> N° </th>
-                            <th> Libellé </th>
+                            <th> Corps du Message </th>
                             <th> Description </th>
                             <th> Date de création </th>
                             <th> Statut </th>
