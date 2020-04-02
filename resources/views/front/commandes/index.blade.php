@@ -84,7 +84,7 @@ table tbody tr td{
                                     Mousse
                                 </td>
                                 <td>
-                                    <img src="" alt="">
+                                    <img src="{{ asset(config('pictures.path').'/styles/img/articles/A2.jpg') }}" alt="slidebg3"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                                 </td>
                                 <td>
                                     10
