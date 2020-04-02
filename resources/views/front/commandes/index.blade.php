@@ -102,14 +102,14 @@ table tbody tr td{
                                     {!! Form::open() !!}
                                         {!! Form::hidden('statut',0) !!}
                                         {!! Form::hidden('id',1) !!}
-                                        <button type="submit" title="Annuler la commande" class="btn btn-xs btn-danger" style="padding: 5px">
+                                        <button type="submit" title="Annuler la commande" class="btn-xs btn-danger">
                                             <span class="glyphicon glyphicon-remove"></span>
                                         </button>
                                     {!! Form::close() !!}
                                 </td>
                                 <td>
-                                    <a href="{{ route('front-commandes.show',1) }}" title="Détail de la commande" class="btn btn-xs btn-info" style="padding: 5px">
-                                        <span class="glyphicon glyphicon-eye-open" style="margin-left: 8px;"></span>
+                                    <a href="{{ route('front-commandes.show',1) }}" title="Détail de la commande" class="btn-xs btn-info">
+                                        <span class="glyphicon glyphicon-eye-open"></span>
                                     </a>
                                 </td>
                             </tr>

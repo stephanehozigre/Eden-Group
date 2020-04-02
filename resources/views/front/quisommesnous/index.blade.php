@@ -79,11 +79,11 @@ Quisommesnous
             <!-- .col-md-12 start -->
             <div class="col-md-12 centered mb-0">
                 <div class="custom-heading style-2">
-                    <h2>Our mission</h2>
+                    <h2>Notre mission</h2>
                 </div><!-- .custom-heading end -->
                 <div class="text triggerAnimation animated fadeInDown" data-animate="fadeInDown" style="opacity: 1;">
-                    <p>As a contractor we promise to take care of your project from start to finish,
-                        deliver it on time, specified budget and quality.</p>
+                    <p>Notre mission est de satisfaire nos clients dans tout nos domaines d'activités. <br>
+                        Puis aussi motiver la jeunesse à l'entreprenariat.</p>
                 </div>
                 <p class="author-name triggerAnimation animated fadeInDown" data-animate="fadeInDown" style="opacity: 1;">Theo Abraham, CEO</p>
             </div><!-- .col-md-12 end -->

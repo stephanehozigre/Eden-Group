@@ -79,8 +79,6 @@ table tbody tr td{
                                 </td>
                                 <td> 
                                     Demande de service accepter avce succes 
-                                    
-                                    
                                 </td>
                                 <td>
                                 Service demandé dans l'immobilier
@@ -95,14 +93,14 @@ table tbody tr td{
                                     {!! Form::open() !!}
                                         {!! Form::hidden('statut',0) !!}
                                         {!! Form::hidden('id',1) !!}
-                                        <button type="submit" title="Désactiver" class="btn btn-xs btn-danger" style="padding: 5px">
+                                        <button type="submit" title="Désactiver" class="btn-xs btn-danger">
                                             <span class="glyphicon glyphicon-remove"></span>
                                         </button>
                                     {!! Form::close() !!}
                                 </td>
                                 <td>
-                                    <a href="{{ route('front-notifications.show',1) }}" title="Détail de la commande" class="btn btn-xs btn-info" style="padding: 5px">
-                                        <span class="glyphicon glyphicon-eye-open" style="margin-left: 8px;"></span>
+                                    <a href="{{ route('front-notifications.show',1) }}" title="Détail de la commande" class="btn-xs btn-info">
+                                        <span class="glyphicon glyphicon-eye-open"></span>
                                     </a>
                                 </td>
                             </tr>

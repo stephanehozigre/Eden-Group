@@ -28,6 +28,7 @@
         {!! Html::script('styles/js/vendor/jquery-1.12.4.min.js') !!}
 	<![endif]-->
     @yield('style')
+    <link rel="icon" type="image/png" href="{{ asset(config('pictures.path').'/styles/img/EdenGroup4.png' ) }}"/>
     <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" rel="stylesheet">
 </head>
 
