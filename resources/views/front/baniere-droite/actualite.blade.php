@@ -17,7 +17,7 @@
                 <div class="item active">
                 <img src="./styles/img/Immobilier/img2.jpg" alt="Chicago">
                     <div class="row" style="text-align:center;margin: 5px;">
-                    <span style="font-weight: bold;">COVID-19:12 nouveaux cas enregistrés au sud ouest du pays</span>
+                    <span style="font-weight: bold;">COVID-19:10 nouveaux cas enregistrés au sud ouest du pays</span>
                     </div>
                 </div>
                 <div class="item">

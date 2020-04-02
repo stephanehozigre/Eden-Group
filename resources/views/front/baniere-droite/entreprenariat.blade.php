@@ -29,7 +29,7 @@
                 <div class="item">
                     <img src="./styles/img/Immobilier/AAA.jpg" alt="Chicago">
                     <div class="row" style="text-align:center;margin: 5px;">
-                    <span style="font-weight: bold;">9 méthodes pour devenir riche étant entrepreneur</span>
+                    <span style="font-weight: bold;">10 méthodes pour devenir riche étant entrepreneur</span>
                     </div>
                 </div>
                 </div>

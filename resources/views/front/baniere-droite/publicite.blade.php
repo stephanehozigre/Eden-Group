@@ -17,7 +17,7 @@
                 <div class="item active">
                 <img src="./styles/img/Immobilier/img2.jpg" alt="Chicago">
                     <div class="row" style="text-align:center;margin: 5px;">
-                    <span style="font-weight: bold;">ceci est un test </span>
+                    <span style="font-weight: bold;">ceci est un exemple </span>
                     </div>
                 </div>
                 <div class="item">

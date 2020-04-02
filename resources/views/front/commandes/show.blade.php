@@ -1,6 +1,6 @@
 @extends ('front.layout.layout_default')
 @section('title')
-Deatil
+Deatils
 @endsection
 @section('content')
 <div class="page-content custom-img-background dark page-title page-title-1 mb-70">
@@ -10,7 +10,7 @@ Deatil
             <!-- .col-md-6 start -->
             <div class="col-md-6">
                 <div class="custom-heading style-1 triggerAnimation animated fadeInUp" data-animate="fadeInUp" style="opacity: 1;">
-                    <h1><span>Detail</span></h1>
+                    <h1><span>Details</span></h1>
                 </div><!-- .custom-heading.style-1 end -->
             </div><!-- .col-md-6 end -->
         </div><!-- .row end -->
