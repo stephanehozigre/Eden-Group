@@ -109,7 +109,7 @@
                             <ul class="dropdown-menu pull-right cart-panel submenu ul">
                                 <li><a href="{{Route('profil.index')}}">Mon profil</a></li>
                                 <li><a href="{{Route('dashboard.index')}}">Tableau de bord</a></li>
-                                <li><a href="{{Route('demandes.index')}}">Mes demandes</a></li>
+                                <li><a href="{{Route('front-demandes.index')}}">Mes demandes</a></li>
                                 <li><a href="{{Route('commandes.index')}}">Mes commandes</a></li>
                                 <li><a href="{{Route('notifications.index')}}">Notifications</a></li>
                                 <li><a href="{{Route('front-users.logout')}}">Deconnexion</a></li>

@@ -71,41 +71,55 @@ table tbody tr td{
                             <th> Statut </th>
                             <th></th>
                             <th></th>
+                            <th></th>
                         </thead>
                         <tbody>
+                            @foreach($demandes as $key => $v)
                             <tr>
                                 <td>
-                                    1
+                                    {{ $key + 1 }}
                                 </td>
                                 <td> 
                                     Demande de : <br> 
-                                    Ferronnerie/Vitrerie <br>
-                                    Carrelage
+                                    {{ $v->libelle }}
                                 </td>
                                 <td>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                    {{ $v->description }}
                                 </td>
                                 <td>
-                                    2020-03-12 <br> 13:25:49
+                                    {{ $v->created_at }}
                                 </td>
                                 <td>
-                                    En cours...
+                                    @if($v->validate==0)
+                                     En cours...
+                                    @else
+                                     Validé
+                                    @endif
                                 </td>
+                                @if($v->validate==0)
                                 <td>
-                                    {!! Form::open() !!}
+                                    {!! Form::open(['route' =>['front-demandes.updateStatut']]) !!}
                                         {!! Form::hidden('statut',0) !!}
-                                        {!! Form::hidden('id',1) !!}
+                                        {!! Form::hidden('id',$v->id) !!}
                                         <button type="submit" title="Désactiver" class="btn btn-xs btn-danger" style="padding: 5px">
                                             <span class="glyphicon glyphicon-remove"></span>
                                         </button>
                                     {!! Form::close() !!}
                                 </td>
                                 <td>
-                                    <a href="{{ route('front-demandes.show',1) }}" title="Détail de la commande" class="btn btn-xs btn-info" style="padding: 5px">
-                                        <span class="glyphicon glyphicon-eye-open" style="margin-left: 8px;"></span>
+                                    <a href="#">Demander un devis</a>
+                                </td>
+                                <td>
+                                    <a href="{{ route('front-demandes.show',$v->id) }}" title="Modifier la demande" style="padding: 5px">
+                                        <span class="glyphicon glyphicon-edit icon-white" style="margin-left: 8px;color:#000;"></span>
                                     </a>
                                 </td>
+                                @else
+                                <td></td>
+                                <td></td>
+                                @endif
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

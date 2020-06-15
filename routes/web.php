@@ -73,8 +73,10 @@ Route::namespace('Front')->group(function(){
     });
 
     Route::namespace('Demandes')->group(function(){
-      Route::get('front-demandes/demandes/{detail}/detail', 'DemandesController@show')->name('front-demandes.show');
-      Route::resource('front-demandes/demandes','DemandesController',['except'=>['show','edit','update','destroy']]);
+      Route::post('front-demandes/update','DemandesController@update')->name('front-demandes.update');
+      Route::post('front-demandes/update-statut','DemandesController@UpdateStatut')->name('front-demandes.updateStatut');
+      Route::get('front-demandes/detail}/detail', 'DemandesController@show')->name('front-demandes.show');
+      Route::resource('front-demandes','DemandesController',['except'=>['show','edit','update','destroy']]);
     });
 
     Route::namespace('Commandes')->group(function(){
