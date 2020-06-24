@@ -100,7 +100,9 @@ Route::namespace('Front')->group(function(){
     Route::namespace('Detail')->group(function(){
       Route::resource('front-detail/detail','DetailController',['except'=>['show','edit','update','destroy']]);
     });
-
+    Route::namespace('Devis')->group(function(){
+      Route::resource('front-devis/devis','DevisController',['except'=>['show','edit','update','destroy']]);
+    });  
 });
 
 /* Admin */
