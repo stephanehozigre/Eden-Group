@@ -14,7 +14,7 @@ Immobilier
                     <h1><span>Immobilier</span></h1>
                 </div>
                 <div style="float:right;opacity: 1;left: 100%;" class="custom-heading style-1 triggerAnimation animated fadeInUp" data-animate="fadeInUp">
-                    <span><img src="./styles/img/logoNewEden.png" class="img-responsive" style="width: 200px; height: 100px;"/></span>
+                    <span><img src="{{ asset(config('pictures.path').'/styles/img/logoNewEden.png') }}" class="img-responsive" style="width: 200px; height: 100px;"/></span>
                 </div>
                 <!-- .custom-heading.style-1 end -->
             </div><!-- .col-md-6 end -->
@@ -25,9 +25,9 @@ Immobilier
     <section class="breadcumb-wrapper">
         <div class="container clearfix">
             <ul class="breadcumb">
-                <li><a href="./">Accueil</a></li>
-                <li><a href="#!/">A propos</a></li>
-                <li><a href="#!/service">Services</a></li>
+                <li><a href="{{ route('home') }}">Accueil</a></li>
+                <li><a href="{{ route('apropos') }}">A propos</a></li>
+                <li><a href="#">Services</a></li>
                 <li><span>Immobilier</span></li>
             </ul>
         </div>
@@ -153,7 +153,7 @@ Immobilier
                         </div>
                     </div>
                     <div class="col-md-3 image-caption-box">
-                        <div class="caption-box-img pad46"><img src="./styles/img/Immobilier/matirial_engineering_03.jpg" alt="Awesome Image"></div>
+                        <div class="caption-box-img pad46"><img src="{{ asset(config('pictures.path').'/styles/img/Immobilier/matirial_engineering_03.jpg') }}" alt="Awesome Image"></div>
                         <div class="text-box">
                             <h2>Electricité / Plomberie</h2>
                             <p>

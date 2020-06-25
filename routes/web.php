@@ -23,16 +23,20 @@ Route::namespace('Front')->group(function(){
       Route::resource('front-users','UserController',['except'=>['show','destroy','create']]);
     });
     Route::namespace('Immobilier')->group(function(){
+      Route::get('domaines/immobilier', 'ImmobilierController@index')->name('immobilier');
       Route::get('front-immobilier/create', 'ImmobilierController@create')->name('front-immobilier.create');
      	Route::resource('front-immobilier','ImmobilierController',['except'=>['show','edit','update','destroy']]);
-   });
+    });
    Route::namespace('Ecommerce')->group(function(){
+      Route::get('domaines/e-commerce', 'EcommerceController@index')->name('ecommerce');
    		Route::resource('front-ecommerce','EcommerceController',['except'=>['show','edit','update','destroy']]);
    });
    Route::namespace('Technologie')->group(function(){
+      Route::get('domaines/informatique', 'TechnologieController@index')->name('informatique');
    		Route::resource('front-technologie','TechnologieController',['except'=>['show','edit','update','destroy']]);
    });
    Route::namespace('Restauration')->group(function(){
+      Route::get('domaines/restauration', 'RestaurationController@index')->name('restauration');
       Route::get('front-restauration/restauration/{detail}/detail', 'RestaurationController@show')->name('front-restauration.show');
       Route::resource('front-restauration','RestaurationController',['except'=>['show','edit','update','destroy']]);
    });
@@ -41,7 +45,8 @@ Route::namespace('Front')->group(function(){
       Route::resource('front-ecommerce','EcommerceController',['except'=>['show','edit','update','destroy']]);
    });
    Route::namespace('Apropos')->group(function(){
-      Route::resource('front-apropos/apropos','AproposController',['except'=>['show','edit','update','destroy']]);
+    Route::get('/apropos', 'AproposController@index')->name('apropos');
+      Route::resource('front-apropos','AproposController',['except'=>['show','edit','update','destroy']]);
    });
    Route::namespace('Messages')->group(function(){
       Route::resource('front-messages','MessageController',['except'=>['index','show','edit','update','destroy']]);
@@ -50,12 +55,15 @@ Route::namespace('Front')->group(function(){
       Route::post('front-newsletters/store','NewsletterController@store')->name('front-newsletters.store');
     });
    Route::namespace('Quisommesnous')->group(function(){
-      Route::resource('front-quisommesnous/quisommesnous','QuisommesnousController',['except'=>['show','edit','update','destroy']]);
+      Route::get('apropos/qui-sommes-nous', 'QuisommesnousController@index')->name('quisommesnous');
+      Route::resource('front-quisommesnous','QuisommesnousController',['except'=>['show','edit','update','destroy']]);
     });
    Route::namespace('NotreEquipe')->group(function(){
-      Route::resource('front-notreequipe/notreequipe','NotreequipeController',['except'=>['show','edit','update','destroy']]);
+      Route::get('apropos/notre-equipe', 'NotreequipeController@index')->name('notreequipe');
+      Route::resource('front-notreequipe','NotreequipeController',['except'=>['show','edit','update','destroy']]);
     });
     Route::namespace('Faq')->group(function(){
+      Route::get('apropos/faq', 'FaqController@index')->name('faq');
       Route::resource('front-faq/faq','FaqController',['except'=>['show','edit','update','destroy']]);
     });
     Route::namespace('Profil')->group(function(){

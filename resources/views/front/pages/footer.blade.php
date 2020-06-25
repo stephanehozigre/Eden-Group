@@ -56,10 +56,8 @@
                   <h4 class="widget_title">Nos services</h4>
                   <div class="widget-contact-list row m0">
                     <ul>
-                      <li><a href="{{Route('front-immobilier.index')}}">- Immobilier</a></li>
-                      <li><a href="{{Route('front-ecommerce.index')}}">- E-commerce</a></li>
-                      <li><a href="{{Route('front-restauration.index')}}">- Restauration</a></li>
-                      <li><a href="#">- Technologie</a></li>
+                      <li><a href="{{Route('immobilier')}}">- Immobilier</a></li>
+                      <li><a href="{{Route('informatique')}}">- Informatique</a></li>
                     </ul>
                   </div>
                 </div>
@@ -67,7 +65,7 @@
                   <h4 class="widget_title">Liens de page</h4>
                   <div class="widget-contact-list row m0">
                     <ul>
-                      <li><a href="{{Route('apropos.index')}}">- A propos</a></li>
+                      <li><a href="{{Route('apropos')}}">- A propos</a></li>
                       <li><a href="{{ route('home') }}">- Accueil</a></li>
                       <li><a href="{{ Route('front-messages.create') }}">- Nous contacter</a></li>
                     </ul>
@@ -103,7 +101,7 @@
         <div class="row">
             <!-- .col-md-6 start -->
             <div class="col-md-6 col-sm-6">
-                <p><strong>© EDEN GROUP'S ENTREPRISE</strong> 2019. Tout droits reservés</p>
+                <p><strong>© EDEN GROUP'S ENTREPRISE</strong> 2020. Tout droits reservés</p>
             </div><!-- .col-md-6 end -->
 
             <!-- .col-md-6 start -->

@@ -21,7 +21,7 @@ Apropos
     <section class="breadcumb-wrapper">
         <div class="container clearfix">
             <ul class="breadcumb">
-                <li><a href="./">Accueil</a></li>
+                <li><a href="{{ route('home') }}">Accueil</a></li>
                 <li><span>A propos</span></li>
             </ul>
         </div>
@@ -79,7 +79,7 @@ Apropos
             <!-- .col-md-12 start -->
             <div class="col-md-12 centered mb-0">
                 <div class="custom-heading style-2">
-                    <h2>Our mission</h2>
+                    <h2>Notre mission</h2>
                 </div><!-- .custom-heading end -->
                 <div class="text triggerAnimation animated fadeInDown" data-animate="fadeInDown" style="opacity: 1;">
                     <p>As a contractor we promise to take care of your project from start to finish,
@@ -118,7 +118,7 @@ Apropos
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h3><a href="team.html">Ronchi Wagase</a></h3>
+                        <h3><a href="team.html">Hozigre Stephane</a></h3>
                         <div class="designation">Constration officer</div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@ Apropos
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h3><a href="team.html">Monica Wagase</a></h3>
+                        <h3><a href="team.html">Koudadjé Ebenezer</a></h3>
                         <div class="designation">Camical officer</div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@ Apropos
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h3><a href="team.html">Jordan Weyker</a></h3>
+                        <h3><a href="team.html">Tanoh Parfait</a></h3>
                         <div class="designation">Cheif Technical officer</div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@ Apropos
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h3><a href="team.html">Gregory Ohayata</a></h3>
+                        <h3><a href="team.html">Ouffouet Patrick</a></h3>
                         <div class="designation">Marketing Manager</div>
                     </div>
                 </div>
