@@ -101,7 +101,9 @@ table tbody tr td{
                                     {!! Form::open(['route' =>['front-demandes.updateStatut']]) !!}
                                         {!! Form::hidden('statut',0) !!}
                                         {!! Form::hidden('id',$v->id) !!}
-                                        <button type="submit" title="Désactiver" class="btn btn-xs btn-danger" style="padding: 5px">
+                                        <button type="submit" title="Désactiver" class="btn btn-xs btn-danger" style="padding: 5px">=======
+                                        {!! Form::hidden('id',1) !!}
+                                        <button type="submit" title="Désactiver" class="btn-xs btn-danger">
                                             <span class="glyphicon glyphicon-remove"></span>
                                         </button>
                                     {!! Form::close() !!}
@@ -112,6 +114,8 @@ table tbody tr td{
                                 <td>
                                     <a href="{{ route('front-demandes.show',$v->id) }}" title="Modifier la demande" style="padding: 5px">
                                         <span class="glyphicon glyphicon-edit icon-white" style="margin-left: 8px;color:#000;"></span>
+                                    <a href="{{ route('front-demandes.show',1) }}" title="Détail de la commande" class="btn-xs btn-info">
+                                        <span class="glyphicon glyphicon-eye-open"></span>
                                     </a>
                                 </td>
                                 @else

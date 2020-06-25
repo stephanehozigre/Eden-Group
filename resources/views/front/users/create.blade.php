@@ -46,6 +46,19 @@ Inscription
                 <label for="tel2">Contact 2:</label>
                 {!! Form::tel('tel2',null,['class'=>'form-control','id'=>'tel2']) !!}
             </div>
+                <div class="form-group {!! $errors->has('g-recaptcha-response')?'has-error':'' !!}">
+                    <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_KEY')}}"></div>
+                    @if($errors->has('g-recaptcha-response'))
+                        <span class="invalid-feedback" style="display:block">
+                            <strong>{!! $errors->first('g-recaptcha-response') !!}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group {!! $errors->has('condition')?'has-error':'' !!}">
+                    {!! Form::checkbox('condition') !!}
+                    <span>Je certifie avoir plus de 18 ans, j'ai lu et accepté les <a href="#">conditions générales d'utilisation</a></span>
+                    {!! $errors->first('condition','<span class="help-block">:message</span>') !!}
+                </div>
             <div class="form-group">
                 {!! Form::submit('Enregistrer',['class'=>'btn form-control','id'=>'submit','style'=>'font-size: 18px;background-color:#ffcc00;border: none;font-weight: bold;line-height: 38px;text-align: center;color: #000000;']) !!}
             </div>
