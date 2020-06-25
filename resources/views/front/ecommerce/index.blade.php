@@ -11,7 +11,7 @@ Ecommerce
             <!-- .col-md-6 start -->
             <div class="col-md-6">
                 <div class="custom-heading style-1 triggerAnimation animated fadeInUp" data-animate="fadeInUp" style="opacity: 1;">
-                    <h1><span>E-commerce</span></h1>
+                    <h1><span>E-commerce </span></h1>
                 </div><!-- .custom-heading.style-1 end -->
             </div><!-- .col-md-6 end -->
         </div><!-- .row end -->

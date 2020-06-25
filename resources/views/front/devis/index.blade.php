@@ -1,6 +1,6 @@
 @extends ('front.layout.layout_default')
 @section('title')
-Mes demandes
+Mes commandes
 @endsection
 @section('style')
 <style type="text/css">
@@ -38,7 +38,7 @@ table tbody tr td{
             <!-- .col-md-6 start -->
             <div class="col-md-6">
                 <div class="custom-heading style-1 triggerAnimation animated fadeInUp" data-animate="fadeInUp" style="opacity: 1;">
-                    <h1>Mes <span>demandes</span></h1>
+                    <h1>Mes <span>Devis</span></h1>
                 </div><!-- .custom-heading.style-1 end -->
             </div><!-- .col-md-6 end -->
         </div><!-- .row end -->
@@ -48,8 +48,8 @@ table tbody tr td{
     <section class="breadcumb-wrapper">
         <div class="container clearfix">
             <ul class="breadcumb">
-                <li><a href="./">Accueil</a></li>
-                <li><span>Mes demandes</span></li>
+                <li><a href="{{ route('home') }}">Accueil</a></li>
+                <li><span>Mes devis</span></li>
             </ul>
         </div>
     </section>
@@ -65,65 +65,50 @@ table tbody tr td{
                     <table id="offers_user" class="table">
                         <thead>
                             <th> N° </th>
-                            <th> Libellé de la demande </th>
-                            <th> Description </th>
-                            <th> Date de création </th>
-                            <th> Statut </th>
-                            <th></th>
+                            <th>numero devis</th>
+                            <th>Id Demande</th>
+                            <th>Description</th>
+                            <th>vu</th>
+                            <th>Statut</th>
+                            <!--th></th-->
                             <th></th>
                             <th></th>
                         </thead>
                         <tbody>
-                            @foreach($demandes as $key => $v)
                             <tr>
                                 <td>
-                                    {{ $key + 1 }}
-                                </td>
-                                <td> 
-                                    Demande de : <br> 
-                                    {{ $v->libelle }}
+                                    1
                                 </td>
                                 <td>
-                                    {{ $v->description }}
+                                    1205
                                 </td>
                                 <td>
-                                    {{ $v->created_at }}
+                                    0244
                                 </td>
                                 <td>
-                                    @if($v->validate==0)
-                                     En cours...
-                                    @else
-                                     Validé
-                                    @endif
+                                   ceci est un test 
                                 </td>
-                                @if($v->validate==0)
                                 <td>
-                                    {!! Form::open(['route' =>['front-demandes.updateStatut']]) !!}
+                                   vu
+                                </td>
+                                <td>
+                                    En cour...
+                                </td>
+                                <td>
+                                    {!! Form::open() !!}
                                         {!! Form::hidden('statut',0) !!}
-                                        {!! Form::hidden('id',$v->id) !!}
-                                        <button type="submit" title="Désactiver" class="btn btn-xs btn-danger" style="padding: 5px">=======
                                         {!! Form::hidden('id',1) !!}
-                                        <button type="submit" title="Désactiver" class="btn-xs btn-danger">
+                                        <button type="submit" title="Annuler le devis" class="btn btn-xs btn-danger" style="padding: 5px">
                                             <span class="glyphicon glyphicon-remove"></span>
                                         </button>
                                     {!! Form::close() !!}
                                 </td>
                                 <td>
-                                    <a href="#">Demander un devis</a>
-                                </td>
-                                <td>
-                                    <a href="{{ route('front-demandes.show',$v->id) }}" title="Modifier la demande" style="padding: 5px">
-                                        <span class="glyphicon glyphicon-edit icon-white" style="margin-left: 8px;color:#000;"></span>
-                                    <a href="{{ route('front-demandes.show',1) }}" title="Détail de la commande" class="btn-xs btn-info">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
+                                    <a href="#" title="Détail devis" class="btn btn-xs btn-info" style="padding: 5px">
+                                        <span class="glyphicon glyphicon-eye-open" style="margin-left: 8px;"></span>
                                     </a>
                                 </td>
-                                @else
-                                <td></td>
-                                <td></td>
-                                @endif
                             </tr>
-                            @endforeach
                         </tbody>
                     </table>
                 </div>

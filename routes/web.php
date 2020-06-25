@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::namespace('Front')->group(function(){
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/', 'HomeController@index')->name('home');
@@ -66,8 +65,10 @@ Route::namespace('Front')->group(function(){
       Route::resource('front-dashboard/dashboard','DashboardController',['except'=>['show','edit','update','destroy']]);
     });
     Route::namespace('Demandes')->group(function(){
-      Route::get('front-demandes/demandes/{detail}/detail', 'DemandesController@show')->name('front-demandes.show');
-      Route::resource('front-demandes/demandes','DemandesController',['except'=>['show','edit','update','destroy']]);
+      Route::post('front-demandes/update','DemandesController@update')->name('front-demandes.update');
+      Route::post('front-demandes/update-statut','DemandesController@UpdateStatut')->name('front-demandes.updateStatut');
+      Route::get('front-demandes/detail}/detail', 'DemandesController@show')->name('front-demandes.show');
+      Route::resource('front-demandes','DemandesController',['except'=>['show','edit','update','destroy']]);
     });
     Route::namespace('Commandes')->group(function(){
       Route::get('front-commandes/commandes/{detail}/detail', 'CommandesController@show')->name('front-commandes.show');
@@ -77,7 +78,6 @@ Route::namespace('Front')->group(function(){
       Route::get('front-notifications/notifications/{detail}/detail', 'NotificationsController@show')->name('front-notifications.show');
       Route::resource('front-notifications/notifications','NotificationsController',['except'=>['show','edit','update','destroy']]);
     });
-
     Route::namespace('Notifications')->group(function(){
       Route::resource('front-notifications/notifications','NotificationsController',['except'=>['show','edit','update','destroy']]);
     });
@@ -87,17 +87,17 @@ Route::namespace('Front')->group(function(){
     Route::namespace('Detail')->group(function(){
       Route::resource('front-detail/detail','DetailController',['except'=>['show','edit','update','destroy']]);
     });
+    Route::namespace('Devis')->group(function(){
+      Route::resource('front-devis/devis','DevisController',['except'=>['show','edit','update','destroy']]);
+    }); 
 });
-
 /* Admin */
-
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/',function (){
         return redirect('/admin/login');
     });
     Route::namespace('Back')->group(function(){
         Route::get('/home','HomeController@index');
-
         Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
         Route::post('/login', 'AdminAuth\LoginController@login');
         Route::post('/logout', 'AdminAuth\LoginController@logout')->name('logout');

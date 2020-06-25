@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Demande extends Model
 {
     protected $fillable = [
-        'libelle', 'statut', 'user_id', 'description'
+        'libelle', 'statut', 'user_id', 'description', 'validate'
     ];
 
-    public function User()
+    public function user()
     {
-    	return $this->HasMany('App\User');
+    	return $this->belongsTo(User:: class);
     }
 }

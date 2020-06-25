@@ -10,4 +10,15 @@ class DemandeRepository extends ResourceRepository
     {
         $this->model=$demande;
     }
+
+    public function all_demande($user_id)
+    {
+    	return $this->model->with('user')
+    				->where('statut',1)
+    				->whereHas('user', function($query) use($user_id){
+    					$query->where('id',$user_id);
+    				})
+    			->orderBy('id','desc')
+    			->get();
+    }
 }
