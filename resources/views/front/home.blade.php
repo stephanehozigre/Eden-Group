@@ -9,9 +9,6 @@ Accueil
 	<div class="col-lg-8">
 		<!-- .page-content start -->
 		<div style="background-color: rgb(255, 255, 255)" class="page-content">
-		  @include('front.home.flash-info')
-		</div>
-		<div style="background-color: rgb(255, 255, 255)" class="page-content">
 		  @include('front.home.service')
 		</div>
 		<div class="page-content">

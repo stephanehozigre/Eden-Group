@@ -1,6 +1,6 @@
 @extends ('front.layout.layout_default')
 @section('title')
-Mes Notifications
+Mes commandes
 @endsection
 @section('style')
 <style type="text/css">
@@ -38,7 +38,7 @@ table tbody tr td{
             <!-- .col-md-6 start -->
             <div class="col-md-6">
                 <div class="custom-heading style-1 triggerAnimation animated fadeInUp" data-animate="fadeInUp" style="opacity: 1;">
-                    <h1>Mes <span>Notifications</span></h1>
+                    <h1>Mes <span>Devis</span></h1>
                 </div><!-- .custom-heading.style-1 end -->
             </div><!-- .col-md-6 end -->
         </div><!-- .row end -->
@@ -48,8 +48,8 @@ table tbody tr td{
     <section class="breadcumb-wrapper">
         <div class="container clearfix">
             <ul class="breadcumb">
-                <li><a href="./">Accueil</a></li>
-                <li><span>Mes Notifications</span></li>
+                <li><a href="{{ route('home') }}">Accueil</a></li>
+                <li><span>Mes devis</span></li>
             </ul>
         </div>
     </section>
@@ -65,10 +65,12 @@ table tbody tr td{
                     <table id="offers_user" class="table">
                         <thead>
                             <th> N° </th>
-                            <th> Corps du Message </th>
-                            <th> Description </th>
-                            <th> Date de création </th>
-                            <th> Statut </th>
+                            <th>numero devis</th>
+                            <th>Id Demande</th>
+                            <th>Description</th>
+                            <th>vu</th>
+                            <th>Statut</th>
+                            <!--th></th-->
                             <th></th>
                             <th></th>
                         </thead>
@@ -77,30 +79,33 @@ table tbody tr td{
                                 <td>
                                     1
                                 </td>
-                                <td> 
-                                    Demande de service accepter avce succes 
+                                <td>
+                                    1205
                                 </td>
                                 <td>
-                                Service demandé dans l'immobilier
+                                    0244
                                 </td>
                                 <td>
-                                    2020-03-12 <br> 13:25:45
+                                   ceci est un test 
                                 </td>
                                 <td>
-                                    Valider
+                                   vu
+                                </td>
+                                <td>
+                                    En cour...
                                 </td>
                                 <td>
                                     {!! Form::open() !!}
                                         {!! Form::hidden('statut',0) !!}
                                         {!! Form::hidden('id',1) !!}
-                                        <button type="submit" title="Désactiver" class="btn-xs btn-danger">
+                                        <button type="submit" title="Annuler le devis" class="btn btn-xs btn-danger" style="padding: 5px">
                                             <span class="glyphicon glyphicon-remove"></span>
                                         </button>
                                     {!! Form::close() !!}
                                 </td>
                                 <td>
-                                    <a href="{{ route('front-notifications.show',1) }}" title="Détail de la commande" class="btn-xs btn-info">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
+                                    <a href="#" title="Détail devis" class="btn btn-xs btn-info" style="padding: 5px">
+                                        <span class="glyphicon glyphicon-eye-open" style="margin-left: 8px;"></span>
                                     </a>
                                 </td>
                             </tr>

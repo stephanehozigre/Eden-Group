@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Front\Users;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Rules\Captcha;
 
 class UserCreateRequest extends FormRequest
 {
@@ -30,6 +31,8 @@ class UserCreateRequest extends FormRequest
             'email' => 'bail|required|unique:users,email',
             'password' => 'bail|required|min:8|confirmed',
             'tel1' => 'bail|required',
+            'g-recaptcha-response' => new Captcha(),
+            'condition' => 'required'
         ];
     }
 }

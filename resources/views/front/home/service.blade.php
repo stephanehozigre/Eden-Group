@@ -15,81 +15,33 @@
     <div class="row">
       <div class="col-sm-6 service-info">
         <div class="item">
-            <a href="#!/service/immobilier" class="post-image view image_hover">			
+            <a href="{{ route('immobilier') }}" class="post-image view image_hover">			
               <img src="styles/img/Immobilier/img1.jpg" alt="" class="img-responsive zoom_img_effect">
             </a>
-            <a href="#!/service/immobilier">
+            <a href="{{ route('immobilier') }}">
               <h4>IMMOBILIER</h4>
             </a>
             <p>
-              Eden Group's Bat est un département de EDEN GROUP'S ENTREPRISE, notre mission est de servir une clientèle nombreuse dans la promotion immobilière; la réalisation et la réhabilitation des travaux de construction.
+              Eden Group's Bat est un département de EDEN GROUP'S ENTREPRISE, notre mission est de servir une clientèle nombreuse dans la promotion immobilière; la réalisation....
             </p>
             <h6>
-              <a href="{{ Route('front-immobilier.index') }}">Lire suite</a>
+              <a href="{{ route('immobilier') }}">Lire suite</a>
             </h6>
         </div>
       </div>
       <div class="col-sm-6 service-info">
         <div class="item">
-          <a href="#!/service/E-commerce" class="post-image view image_hover">
+          <a href="{{ route('informatique') }}" class="post-image view image_hover">
             <img src="styles/img/Restauration/img.jpg" alt="" class="img-responsive zoom_img_effect">
           </a>
-          <a href="#!/service/E-commerce">
-            <h4>E-commerce</h4>
+          <a href="{{ route('informatique') }}">
+            <h4>INFORMATIQUE</h4>
           </a>
           <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
           <h6>
-          <a href="{{ Route('front-ecommerce.index') }}">Lire suite</a>
+          <a href="{{ route('informatique') }}">Lire suite</a>
           </h6>
         </div>
       </div>
-      <!-- <div class="col-sm-6 service-info">
-        <div class="item">
-            <a href="#!/service/cinema" class="post-image view image_hover">		
-                <img src="styles/img/Cinema/img.jpg" alt="" class="img-responsive zoom_img_effect">
-            </a>
-            <a href="#!/service/cinema">
-              <h4>CINEMA</h4>
-            </a>
-            <p>
-              Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.
-            </p>
-            <h6>
-              <a href="#!/service/cinema">Lire suite</a>
-            </h6>
-        </div>
-      </div> -->
     </div>
-    <div class="row">
-        <div class="col-sm-6 service-info">
-          <div class="item">
-            <a href="#!/service/E-commerce" class="post-image view image_hover">
-              <img src="styles/img/Restauration/img.jpg" alt="" class="img-responsive zoom_img_effect">
-            </a>
-            <a href="#!/service/E-commerce">
-              <h4>Restauration</h4>
-            </a>
-            <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-            <h6>
-              <a href="{{ Route('front-restauration.index') }}">Lire suite</a>
-            </h6>
-          </div>
-        </div>
-        <div class="col-sm-6 service-info">
-          <div class="item">
-              <a href="#!/service/cinema" class="post-image view image_hover">		
-                  <img src="styles/img/Cinema/img.jpg" alt="" class="img-responsive zoom_img_effect">
-              </a>
-              <a href="#!/service/cinema">
-                <h4>Technologie</h4>
-              </a>
-              <p>
-                Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.
-              </p>
-              <h6>
-                <a href="{{ Route('front-technologie.index') }}">Lire suite</a>
-              </h6>
-          </div>
-        </div>
-      </div>
 </section>

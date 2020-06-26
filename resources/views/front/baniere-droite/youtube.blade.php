@@ -3,6 +3,14 @@
 		<div class="custom-heading style-1">
 	        <h1>Youtube</h1>
 	    </div>
-		<iframe src="http://www.youtube.com/subscribe_widget?p=xyz" style="overflow: hidden; height: 105px; width: 300px; border: 0;" scrolling="no" frameBorder="0"> </iframe>
+		<div>
+			<div class="wrap-pic-w pos-relative">
+				<img src="./styles/img/video-01.jpg" alt="IMG">
+
+				<button class="s-full ab-t-l flex-c-c fs-32 cl0 hov-cl10 trans-03">
+					<span class="fa fa-youtube"></span>
+				</button>
+			</div>
+		</div>
 	</div>
 </div>

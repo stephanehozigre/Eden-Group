@@ -7,9 +7,6 @@ Nous Contacter
 .contact-form{
 	background: none;
 }
-.quote.style-3{
-	background-color: #0f263a;
-}
 .contact-form .form-group{
 	width: 100%;
 }
@@ -130,7 +127,13 @@ Nous Contacter
         </div><!-- .row end -->
     </div><!-- .container end -->
 </div><!-- .page-content end -->  
-
+<div class="page-content">
+    <div class="col-md-10 col-lg-12" style="">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1k5OgI5zJQULUt75LJdTs7JCF7sA&hl=fr" width="100%" height="500"></iframe>
+        </div>
+    </div>
+</div>
 <!-- .page-content start -->
 <!-- .page-content.custom-background end -->
 @endsection

@@ -22,30 +22,27 @@
                     <a href="{{ route('home') }}">Accueil</a>
                 </li>  
                 <li class="dropdown">
-                    <a  @if(Route::currentRouteName()=='front-immobilier.index' || Route::currentRouteName()=='front-ecommerce.index'  || Route::currentRouteName()=='front-restauration.index') class="color dropdown-toggle" @endif href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Nos Domaines</a>
+                    <a  @if(Route::currentRouteName()=='immobilier' || Route::currentRouteName()=='informatique') class="color dropdown-toggle" @endif href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Nos Domaines</a>
                     <ul class="dropdown-menu submenu">
-                        <li @if(Route::currentRouteName()=='front-immobilier.index') class="active" @endif>
-                            <a href="{{ Route('front-immobilier.index') }}">Immobilier</a>
+                        <li @if(Route::currentRouteName()=='immobilier') class="active" @endif>
+                            <a href="{{ Route('immobilier') }}">Immobilier</a>
                         </li>
-                        <li @if(Route::currentRouteName()=='front-ecommerce.index') class="active" @endif>
-                            <a href="{{ Route('front-ecommerce.index') }}">E-commerce</a>
-                        </li>
-                        <li  @if(Route::currentRouteName()=='front-restauration.index') class="active" @endif>
-                            <a href="{{ Route('front-restauration.index') }}">Restauration</a>
+                        <li @if(Route::currentRouteName()=='informatique') class="active" @endif>
+                            <a href="{{ Route('informatique') }}">Informatique</a>
                         </li>
                     </ul><!-- .dropdown-menu end -->
                 </li><!-- .dropdown end -->           
                 <li class="dropdown">
-                    <a href="{{ Route('apropos.index') }}" @if(Route::currentRouteName()=='apropos.index' || Route::currentRouteName()=='quisommesnous.index' || Route::currentRouteName()=='notreequipe.index' || Route::currentRouteName()=='faq.index') class="color dropdown-toggle" @endif role="button" aria-haspopup="true" aria-expanded="true" >A propos</a>
+                    <a href="{{ Route('apropos') }}" @if(Route::currentRouteName()=='apropos' || Route::currentRouteName()=='quisommesnous' || Route::currentRouteName()=='notreequipe' || Route::currentRouteName()=='faq') class="color dropdown-toggle" @endif role="button" aria-haspopup="true" aria-expanded="true" >A propos</a>
                     <ul class="dropdown-menu submenu">
-                        <li @if(Route::currentRouteName()=='quisommesnous.index') class="active" @endif>
-                            <a href="{{ Route('quisommesnous.index') }}">Qui sommes nous</a>
+                        <li @if(Route::currentRouteName()=='quisommesnous') class="active" @endif>
+                            <a href="{{ Route('quisommesnous') }}">Qui sommes nous</a>
                         </li>
-                        <li @if(Route::currentRouteName()=='notreequipe.index') class="active" @endif>
-                            <a href="{{ Route('notreequipe.index') }}">Notre équipe</a>
+                        <li @if(Route::currentRouteName()=='notreequipe') class="active" @endif>
+                            <a href="{{ Route('notreequipe') }}">Notre équipe</a>
                         </li>
-                        <li @if(Route::currentRouteName()=='faq.index') class="active" @endif>
-                            <a href="{{ Route('faq.index') }}">FAQ</a>
+                        <li @if(Route::currentRouteName()=='faq') class="active" @endif>
+                            <a href="{{ Route('faq') }}">FAQ</a>
                         </li>
                     </ul>
                 </li>
@@ -109,9 +106,10 @@
                             <ul class="dropdown-menu pull-right cart-panel submenu ul">
                                 <li><a href="{{Route('profil.index')}}">Mon profil</a></li>
                                 <li><a href="{{Route('dashboard.index')}}">Tableau de bord</a></li>
-                                <li><a href="{{Route('demandes.index')}}">Mes demandes</a></li>
+                                <li><a href="{{Route('front-demandes.index')}}">Mes demandes</a></li>
                                 <li><a href="{{Route('commandes.index')}}">Mes commandes</a></li>
                                 <li><a href="{{Route('notifications.index')}}">Notifications</a></li>
+                                <li><a href="{{Route('devis.index')}}">Mes devis</a></li>
                                 <li><a href="{{Route('front-users.logout')}}">Deconnexion</a></li>
                             </ul>
                         </li> 

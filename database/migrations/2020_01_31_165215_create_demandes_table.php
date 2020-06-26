@@ -16,7 +16,7 @@ class CreateDemandesTable extends Migration
         Schema::create('demandes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('libelle');
-            $table->boolean('statut')->default(0);
+            $table->boolean('statut')->default(1);
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')
                     ->references('id')
@@ -34,9 +34,6 @@ class CreateDemandesTable extends Migration
      */
     public function down()
     {
-        Schema::table('demandes', function(Blueprint $table){
-            $table->dropForeign('demandes_user_id');
-        });
-        Schema::drop('demandes');
+        Schema::dropIfExists('demandes');
     }
 }
