@@ -1,6 +1,6 @@
 @extends ('front.layout.layout_default')
 @section('title')
-Apropos
+Apropos de nous
 @endsection
 
 @section('content')
