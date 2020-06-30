@@ -32,6 +32,7 @@ Route::namespace('Front')->group(function(){
    		Route::resource('front-ecommerce','EcommerceController',['except'=>['show','edit','update','destroy']]);
    });
    Route::namespace('Technologie')->group(function(){
+    Route::get('domaines/informatique/{id}/', 'TechnologieController@show')->name('detailinfo');
       Route::get('domaines/informatique', 'TechnologieController@index')->name('informatique');
    		Route::resource('front-technologie','TechnologieController',['except'=>['show','edit','update','destroy']]);
    });

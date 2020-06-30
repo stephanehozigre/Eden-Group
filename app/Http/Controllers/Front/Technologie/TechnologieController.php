@@ -16,4 +16,8 @@ class TechnologieController extends Controller
     {
         return view('front.technologie.index');
     }
+    public function show($id)
+    {
+        return view('front.technologie.show');
+    }
 }
