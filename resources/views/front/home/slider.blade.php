@@ -23,7 +23,7 @@
                             Elle donne la possibilité à ces clients de voir des plans de maison, <br>
                             les clients peuvent aussi proposer des plans.
                         </p>
-                        <a data-animation="animated fadeInUp" href="{{ route('immobilier') }}" style="display: inline-block;" class="view-all hvr-bounce-to-right slide_learn_btn btn btn0">
+                        <a data-animation="animated fadeInUp" href="{{ route('immobilier') }}" style="display: inline-block;" class="btn btn-info">
                             Lire suite
                         </a>
                       </div>
@@ -67,7 +67,7 @@
                                 qui s'occupe du volet Restauration. <br>
                                 Elle met des plats du jour à la disposition de ces clients.
                             </p>
-                            <a data-animation="animated fadeInUp" href="{{ route('informatique') }}" style="display: inline-block;" class="view-all hvr-bounce-to-right slide_learn_btn btn btn0">
+                            <a data-animation="animated fadeInUp" href="{{ route('informatique') }}" style="display: inline-block;" class="btn btn-info">
                                 Lire suite
                             </a>
                         </div>
@@ -106,7 +106,7 @@
                                 qui s'occupe du volet commerce. <br>
                                 Elle met des articles à la disposition de ces clients.
                             </p>
-                            <a data-animation="animated fadeInUp" href="about_us.html" style="display: inline-block;" class="view-all hvr-bounce-to-right slide_learn_btn btn btn0">
+                            <a data-animation="animated fadeInUp" href="about_us.html" style="display: inline-block;" class="btn btn-info">
                                 Lire suite
                             </a>
                         </div>
