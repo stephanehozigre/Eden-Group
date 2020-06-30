@@ -12,6 +12,9 @@ Accueil
 		  @include('front.home.service')
 		</div>
 		<div class="page-content">
+			@include('front.home.tarif')
+		</div>
+		<div class="page-content">
 			@include('front.home.notre-valeur')
 		</div>
 	</div>
@@ -31,7 +34,7 @@ Accueil
 			<!--Entreprenariat-->
 			@include('front.baniere-droite.entreprenariat')
 			<!--Localisation-->
-			@include('front.baniere-droite.localisation')
+			
 			<!--Facebook-->
 			@include('front.baniere-droite.facebook')
 			<!--NewsLetter-->
