@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDevisTable extends Migration
+class CreateServicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,17 @@ class CreateDevisTable extends Migration
      */
     public function up()
     {
-        Schema::create('devis', function (Blueprint $table) {
+        Schema::create('services', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('numero');
-            $table->integer('demande_id')->unsigned();
-            $table->foreign('demande_id')
+            $table->string('libelle');
+            $table->text('description');
+            $table->boolean('validate')->default(0);
+            $table->integer('domaine_id')->unsigned();
+            $table->foreign('domaine_id')
                 ->references('id')
-                ->on('demande')
+                ->on('domaines')
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
-            $table->string('description');
-            $table->boolean('vu');
-            $table->boolean('statut')->default(1);
             $table->timestamps();
         });
     }
@@ -36,9 +35,9 @@ class CreateDevisTable extends Migration
      */
     public function down()
     {
-        Schema::table('devis', function(Blueprint $table){
-            $table->dropForeign('devis_demande_id_foreing');
+         Schema::table('services', function(Blueprint $table){
+            $table->dropForeign('services_domaine_id_foreing');
         });
-        Schema::dropIfExists('devis');
+        Schema::dropIfExists('services');
     }
 }
