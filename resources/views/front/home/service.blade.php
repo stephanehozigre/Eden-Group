@@ -43,5 +43,19 @@
           </h6>
         </div>
       </div>
+      <div class="col-sm-6 service-info">
+        <div class="item">
+          <a href="{{ route('informatique') }}" class="post-image view image_hover">
+            <img src="styles/img/Restauration/img.jpg" alt="" class="img-responsive zoom_img_effect">
+          </a>
+          <a href="{{ route('informatique') }}">
+            <h4>E-COMMERCE</h4>
+          </a>
+          <p>Neque porro quisquam est, qui dolorem ipsum quira dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+          <h6>
+          <a href="{{ route('informatique') }}">Lire suite</a>
+          </h6>
+        </div>
+      </div>
     </div>
 </section>

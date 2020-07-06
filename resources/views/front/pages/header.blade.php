@@ -30,6 +30,9 @@
                         <li @if(Route::currentRouteName()=='informatique') class="active" @endif>
                             <a href="{{ Route('informatique') }}">Informatique</a>
                         </li>
+                        <li @if(Route::currentRouteName()=='E-Commmerce') class="active" @endif>
+                            <a href="http://192.168.43.81/eShop/index.php?route=common/home" target="_blank">Ecommerce</a>
+                        </li>
                     </ul><!-- .dropdown-menu end -->
                 </li><!-- .dropdown end -->           
                 <li class="dropdown">
