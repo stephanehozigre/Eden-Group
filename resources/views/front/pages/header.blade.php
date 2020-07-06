@@ -63,41 +63,6 @@
                     <input id="m_search" autocomplete="off" name="s" type="search" style="color:#000" placeholder="Recherche...">
                 </form>
             </div>
-            <div class="cart-box">
-                <div class="dropdown1">
-                    <button  class="cart-box-btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="flaticon-shopping-cart-of-checkered-design"></span>
-                        <span class="total-cart">2</span>
-                    </button>
-                    <div class="dropdown-menu pull-right cart-panel" aria-labelledby="dropdownMenu3">
-
-                        <div class="cart-product">
-                            <div class="inner">
-                                <div class="cross-icon"><span class="icon fa fa-remove"></span></div>
-                                <div class="image"><img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}" alt=""></div>
-                                <h3><a href="shop-single.html">Flying Ninja</a></h3>
-                                <div class="quantity-text">Quantité 1</div>
-                                <div class="price">FCFA 5000</div>
-                            </div>
-                        </div>
-                        <div class="cart-product">
-                            <div class="inner">
-                                <div class="cross-icon"><span class="icon fa fa-remove"></span></div>
-                                <div class="image"><img src="{{ asset(config('pictures.path').'/styles/img/articles/1.jpg') }}"  alt=""></div>
-                                <h3><a href="shop-single.html">Patient Ninja</a></h3>
-                                <div class="quantity-text">Quantité 1</div>
-                                <div class="price">FCFA 5000</div>
-                            </div>
-                        </div>
-                        <div class="cart-total">Total: <span>FCFA 10000</span></div>
-                        <ul class="btns-boxed">
-                            <li><a href="{{Route('panier.index')}}">Mon panier</a></li>
-                            <!-- <li><a href="checkout.html">CheckOut</a></li> -->
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
             <div class="cart-box" role="button" aria-haspopup="true" aria-expanded="true">
                 @if(Auth::guest())
                     <li @if(Route::currentRouteName()=='front-messages.create') class="active" @endif>
